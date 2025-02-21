@@ -111,23 +111,33 @@ img, iframe {
     background-color: #0088cc;
 }
 
-/* 共有リンク */
+/* 修正追加: SNS共有ボタンを2列×3行に並べる */
 .social-links {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2列 */
+    gap: 10px; /* ボタンの間隔 */
     justify-content: center;
-    gap: 15px;
-    margin: 30px 0;
+    align-items: center;
+    max-width: 300px; /* 適切な幅に調整 */
+    margin: 30px auto; /* 中央寄せ */
 }
 
+/* SNSボタン共通のスタイル */
 .social-links a {
     text-decoration: none;
-    padding: 10px 15px;
+    padding: 15px;
     border-radius: 5px;
     color: white;
-    font-size: 14px;
-    display: inline-block;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px; /* ボタンの幅 */
+    height: 50px; /* ボタンの高さ */
+    text-align: center;
 }
 
+/* SNSボタンの色 */
 .twitter { background-color: #1DA1F2; }
 .facebook { background-color: #1877F2; }
 .google { background-color: #DB4437; }
