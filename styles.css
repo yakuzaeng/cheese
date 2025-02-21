@@ -7,6 +7,12 @@ body {
     color: #000;
 }
 
+/* 修正追加: ページ全体のオーバーフロー防止 */
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
 /* ヘッダーのスタイル */
 header {
     display: flex;
@@ -16,6 +22,8 @@ header {
     padding: 15px 20px;
     color: white;
     position: relative;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 /* ロゴ */
@@ -30,6 +38,11 @@ header {
 }
 
 /* ナビゲーションメニュー */
+nav {
+    max-width: 100%; /* 修正追加 */
+    box-sizing: border-box;
+}
+
 nav ul {
     list-style: none;
     display: flex;
@@ -57,6 +70,12 @@ nav ul li a.active, nav ul li a:hover {
 .hero img {
     width: 100%;
     display: block;
+}
+
+/* 修正追加: 画像や iframe のオーバーフロー防止 */
+img, iframe {
+    max-width: 100%;
+    height: auto;
 }
 
 /* 告知セクション */
@@ -146,11 +165,13 @@ footer {
         top: 60px;
         right: 0;
         background-color: rgba(0, 0, 0, 0.9);
-        width: 200px;
+        width: 100%; /* 修正追加: ナビゲーションの幅を画面に合わせる */
+        max-width: 100%;
         display: none;
         flex-direction: column;
         text-align: right;
         padding: 10px;
+        box-sizing: border-box;
     }
 
     nav ul {
