@@ -10,18 +10,23 @@ body {
 /* ヘッダー */
 header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     background-color: #000;
     color: #fff;
     padding: 15px 20px;
 }
 
-header .logo {
-    font-size: 24px;
+/* ロゴ部分の調整 */
+.logo {
+    font-size: 24px; /* デフォルトのフォントサイズ */
     font-weight: bold;
+    white-space: nowrap; /* 改行を防ぐ */
+    display: flex;
+    align-items: center;
 }
 
+/* ナビゲーション */
 nav ul {
     list-style: none;
     padding: 0;
@@ -38,7 +43,7 @@ nav ul li a {
     text-decoration: none;
 }
 
-/* ヒーローセクション */
+/* ヒーローセクション（トップの画像） */
 .hero img {
     width: 100%;
     max-height: 400px;
@@ -95,4 +100,41 @@ footer {
     color: #fff;
     padding: 10px;
     text-align: center;
+}
+
+/* 📌 スマホ対応（レスポンシブデザイン） */
+@media (max-width: 768px) {
+    /* ヘッダーの調整 */
+    header {
+        flex-direction: column; /* スマホ時は縦配置 */
+        align-items: center;
+        text-align: center;
+    }
+
+    /* ロゴサイズを小さくする */
+    .logo {
+        font-size: 18px; /* スマホ用にフォントを小さく */
+        margin-bottom: 10px; /* ナビゲーションと間隔を開ける */
+    }
+
+    /* ナビゲーションを縦配置に */
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 5px 0; /* ナビゲーションの間隔を調整 */
+    }
+
+    /* アルバムカバーの並びを縦にする */
+    .album-covers {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .album-covers img {
+        width: 80%; /* スマホ画面に合わせて調整 */
+        max-width: 300px;
+    }
 }
