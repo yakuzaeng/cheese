@@ -45,16 +45,16 @@ header {
     line-height: 1; /* 行の高さを調整 */
 }
 
-/* ナビゲーションメニュー */
+/* ナビゲーションメニュー（常時表示） */
 nav {
-    max-width: 100%; /* 修正追加 */
-    box-sizing: border-box;
+    display: flex;
+    align-items: center;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    gap: 15px;
+    gap: 20px; /* メニュー間のスペース */
     margin: 0;
     padding: 0;
 }
@@ -178,43 +178,21 @@ footer {
 
 /* スマホ時のナビゲーション */
 @media screen and (max-width: 768px) {
+    header {
+        flex-wrap: wrap;
+    }
+    
     nav {
-        position: absolute;
-        top: 60px;
-        right: 0;
-        background-color: rgba(0, 0, 0, 0.9);
-        width: 100%; /* 修正追加: ナビゲーションの幅を画面に合わせる */
-        max-width: 100%;
-        display: none;
-        flex-direction: column;
-        text-align: right;
-        padding: 10px;
-        box-sizing: border-box;
+        margin-left: auto;
     }
 
     nav ul {
-        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-end;
     }
 
-    nav ul li {
-        margin: 10px 0;
-    }
-
-    .menu-button {
-        display: block;
-        cursor: pointer;
-        font-size: 20px;
-        color: white;
-        background: none;
-        border: none;
-        padding: 10px;
-    }
-
-    .menu-button:hover {
-        color: red;
-    }
-
-    .menu-open nav {
-        display: flex;
+    nav ul li a {
+        padding: 5px 10px;
+        font-size: 12px;
     }
 }
