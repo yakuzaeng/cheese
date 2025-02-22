@@ -45,7 +45,7 @@ header {
     line-height: 1; /* 行の高さを調整 */
 }
 
-/* ナビゲーションメニュー（常時表示） */
+/* ナビゲーションメニュー（フォントサイズを小さく & 間隔を縮める） */
 nav {
     display: flex;
     align-items: center;
@@ -54,7 +54,7 @@ nav {
 nav ul {
     list-style: none;
     display: flex;
-    gap: 20px; /* メニュー間のスペース */
+    gap: 10px; /* メニュー間の間隔を狭くする */
     margin: 0;
     padding: 0;
 }
@@ -66,8 +66,8 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
-    padding: 8px 12px;
-    font-size: 14px;
+    padding: 5px 8px; /* メニューのパディングを縮小 */
+    font-size: 12px; /* 文字サイズを小さく */
 }
 
 nav ul li a.active, nav ul li a:hover {
@@ -192,7 +192,7 @@ footer {
     }
 
     nav ul li a {
-        padding: 5px 10px;
-        font-size: 12px;
+        padding: 4px 6px; /* スマホ時の間隔をさらに縮小 */
+        font-size: 11px; /* さらに小さく */
     }
 }
