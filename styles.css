@@ -19,7 +19,7 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: #000;
-    padding: 15px 20px;
+    padding: 10px 15px; /* ヘッダーの高さを調整 */
     color: white;
     position: relative;
     width: 100%;
@@ -33,13 +33,13 @@ header {
 }
 
 .logo img {
-    height: 50px;
-    margin-right: 10px;
+    height: 40px; /* アイコンのサイズを小さく */
+    margin-right: 8px;
 }
 
-/* 追加: 左上の「三豊會」の文字サイズを小さくする */
+/* 追加: 左上の「三豊會」の文字サイズを小さく */
 .logo h1 {
-    font-size: 14px; /* 文字サイズを小さく調整 */
+    font-size: 12px; /* 文字サイズを小さく調整 */
     margin: 0;
     padding: 0;
     line-height: 1; /* 行の高さを調整 */
@@ -54,7 +54,7 @@ nav {
 nav ul {
     list-style: none;
     display: flex;
-    gap: 10px; /* メニュー間の間隔を狭くする */
+    gap: 5px; /* メニュー間の間隔を狭くする */
     margin: 0;
     padding: 0;
 }
@@ -70,15 +70,15 @@ nav ul li {
 nav ul li:not(:last-child)::after {
     content: "|";
     color: white; /* 棒線の色 */
-    margin-left: 10px; /* テキストとの間隔 */
-    font-size: 14px; /* 棒線のサイズ */
+    margin-left: 5px; /* テキストとの間隔を調整 */
+    font-size: 12px; /* 棒線のサイズを小さく */
 }
     
 nav ul li a {
     color: white;
     text-decoration: none;
-    padding: 5px 8px; /* メニューのパディングを縮小 */
-    font-size: 12px; /* 文字サイズを小さく */
+    padding: 4px 6px; /* メニューのパディングを縮小 */
+    font-size: 11px; /* 文字サイズを小さく */
 }
 
 nav ul li a.active, nav ul li a:hover {
@@ -205,7 +205,7 @@ footer {
     }
 
     nav ul li a {
-        padding: 4px 6px; /* スマホ時の間隔をさらに縮小 */
-        font-size: 11px; /* さらに小さく */
+        padding: 3px 5px; /* スマホ時の間隔をさらに縮小 */
+        font-size: 10px; /* さらに小さく */
     }
 }
