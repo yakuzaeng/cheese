@@ -17,7 +17,6 @@ html, body {
 header {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* ロゴとメニューを左右均等に配置 */
     background-color: #000;
     padding: 10px 20px;
     color: white;
@@ -29,7 +28,7 @@ header {
 .logo {
     display: flex;
     align-items: center;
-    gap: 6px; /* ロゴと「三豊會」の間隔を調整 */
+    gap: 10px; /* ロゴと「三豊會」の間隔を適切に調整 */
 }
 
 .logo img {
@@ -49,14 +48,14 @@ nav {
     display: flex;
     align-items: center;
     flex-grow: 1; /* ナビゲーションを適切に伸ばす */
-    justify-content: flex-end; /* ⭐ メニューを右寄せにする */
-    margin-right: 30px; /* 右端に近づける */
+    justify-content: flex-start; /* ⭐ 左寄せ */
+    margin-left: 20px; /* 三豊會との間隔を調整 */
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    gap: 15px; /* メニュー間の間隔 */
+    gap: 12px; /* メニュー間の間隔 */
     margin: 0;
     padding: 0;
     align-items: center;
@@ -81,7 +80,7 @@ nav ul li:not(:last-child)::after {
 nav ul li a {
     color: white;
     text-decoration: none;
-    padding: 5px 10px;
+    padding: 3px 8px;
     font-size: 12px;
 }
 
