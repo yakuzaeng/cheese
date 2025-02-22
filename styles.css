@@ -17,7 +17,7 @@ html, body {
 header {
     display: flex;
     align-items: center;
-    justify-content: flex-start; /* メニューをロゴの近くに配置 */
+    justify-content: space-between; /* ロゴとメニューを左右均等に配置 */
     background-color: #000;
     padding: 8px 20px;
     color: white;
@@ -46,16 +46,17 @@ header {
 
 /* ナビゲーションメニュー */
 nav {
-    flex-grow: 1;
     display: flex;
-    justify-content: flex-start; /* メニューを左寄せにして均等に配置 */
-    margin-left: 20px; /* ロゴとの距離を調整 */
+    align-items: center;
+    flex-grow: 1; /* ナビゲーションを適切に伸ばす */
+    justify-content: flex-start; /* 左揃え */
+    margin-left: 15px; /* 三豊會との間隔を調整 */
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    gap: 12px; /* メニュー間の間隔を縮小 */
+    gap: 10px; /* メニュー間の間隔を微調整 */
     margin: 0;
     padding: 0;
     align-items: center;
