@@ -37,6 +37,14 @@ header {
     margin-right: 10px;
 }
 
+/* 追加: 左上の「三豊會」の文字サイズを小さくする */
+.logo h1 {
+    font-size: 14px; /* 文字サイズを小さく調整 */
+    margin: 0;
+    padding: 0;
+    line-height: 1; /* 行の高さを調整 */
+}
+
 /* ナビゲーションメニュー */
 nav {
     max-width: 100%; /* 修正追加 */
