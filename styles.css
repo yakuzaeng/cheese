@@ -53,7 +53,7 @@ nav {
 nav ul {
     list-style: none;
     display: flex;
-    gap: 25px; /* メニュー間の間隔を適切に調整 */
+    gap: 15px; /* メニュー間の間隔を縮小 */
     margin: 0;
     padding: 0;
     align-items: center;
@@ -70,7 +70,7 @@ nav ul li {
 nav ul li:not(:last-child)::after {
     content: "|";
     color: white;
-    margin-left: 25px; /* テキストとの間隔を調整 */
+    margin-left: 10px; /* テキストとの間隔を狭める */
     font-size: 12px;
     font-weight: lighter;
 }
@@ -78,7 +78,7 @@ nav ul li:not(:last-child)::after {
 nav ul li a {
     color: white;
     text-decoration: none;
-    padding: 4px 6px;
+    padding: 3px 5px;
     font-size: 12px;
 }
 
