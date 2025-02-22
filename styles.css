@@ -29,7 +29,7 @@ header {
 .logo {
     display: flex;
     align-items: center;
-    gap: 6px; /* ロゴと「三豊會」の間隔をさらに縮める */
+    gap: 10px; /* ロゴと「三豊會」の間隔を調整 */
 }
 
 .logo img {
@@ -38,7 +38,7 @@ header {
 
 /* 追加: 左上の「三豊會」の文字サイズを小さく */
 .logo h1 {
-    font-size: 10px; /* 文字サイズをさらに小さく */
+    font-size: 10px;
     margin: 0;
     padding: 0;
     line-height: 1;
@@ -46,16 +46,17 @@ header {
 
 /* ナビゲーションメニュー */
 nav {
-    display: flex;
     flex-grow: 1;
-    justify-content: flex-start; /* メニューを左寄せ */
+    display: flex;
+    justify-content: space-between; /* 左右均等に配置 */
+    padding: 0 50px; /* 左右の余白を調整 */
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    gap: 12px; /* メニュー間の間隔を適切に調整 */
-    margin: 0;
+    gap: 20px; /* メニュー間の間隔を調整 */
+    margin: 0 auto; /* メニューを中央に配置 */
     padding: 0;
     align-items: center;
 }
@@ -70,8 +71,8 @@ nav ul li {
 /* 各項目の後に棒線を追加（最後の項目には適用しない） */
 nav ul li:not(:last-child)::after {
     content: "|";
-    color: white; /* 棒線の色 */
-    margin-left: 10px; /* テキストとの間隔を適切に調整 */
+    color: white;
+    margin-left: 15px; /* テキストとの間隔を調整 */
     font-size: 10px;
     font-weight: lighter;
 }
@@ -79,8 +80,8 @@ nav ul li:not(:last-child)::after {
 nav ul li a {
     color: white;
     text-decoration: none;
-    padding: 3px 5px; /* メニューのパディングを縮小 */
-    font-size: 10px; /* さらに小さく */
+    padding: 3px 5px;
+    font-size: 10px;
 }
 
 nav ul li a.active, nav ul li a:hover {
@@ -135,7 +136,7 @@ img, iframe {
 /* 修正追加: SNS共有ボタンを2列×3行に並べる */
 .social-links {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2列 */
+    grid-template-columns: repeat(2, 1fr);
     gap: 10px;
     justify-content: center;
     align-items: center;
@@ -198,12 +199,12 @@ footer {
     }
     
     nav {
-        margin-left: auto;
+        padding: 0 20px; /* スマホ時の左右余白を調整 */
     }
 
     nav ul {
         flex-wrap: wrap;
-        justify-content: flex-end;
+        justify-content: center;
     }
 
     nav ul li a {
