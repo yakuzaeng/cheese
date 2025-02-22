@@ -16,12 +16,11 @@ html, body {
 /* ヘッダーのスタイル */
 header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     background-color: #000;
     padding: 10px 15px; /* ヘッダーの高さを調整 */
     color: white;
-    position: relative;
     width: 100%;
     box-sizing: border-box;
 }
@@ -30,11 +29,11 @@ header {
 .logo {
     display: flex;
     align-items: center;
+    gap: 10px; /* ロゴと「三豊會」の間隔を適切に調整 */
 }
 
 .logo img {
     height: 40px; /* アイコンのサイズを小さく */
-    margin-right: 8px;
 }
 
 /* 追加: 左上の「三豊會」の文字サイズを小さく */
@@ -42,19 +41,20 @@ header {
     font-size: 12px; /* 文字サイズを小さく調整 */
     margin: 0;
     padding: 0;
-    line-height: 1; /* 行の高さを調整 */
+    line-height: 1;
 }
 
-/* ナビゲーションメニュー（フォントサイズを小さく & 間隔を縮める & 棒線を追加） */
+/* ナビゲーションメニューの調整 */
 nav {
     display: flex;
-    align-items: center;
+    flex-grow: 1; /* ナビゲーションをロゴの横に広げる */
+    justify-content: center; /* メニューを中央寄せ */
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    gap: 5px; /* メニュー間の間隔を狭くする */
+    gap: 20px; /* メニュー間の間隔を均等に */
     margin: 0;
     padding: 0;
 }
@@ -70,15 +70,15 @@ nav ul li {
 nav ul li:not(:last-child)::after {
     content: "|";
     color: white; /* 棒線の色 */
-    margin-left: 5px; /* テキストとの間隔を調整 */
-    font-size: 12px; /* 棒線のサイズを小さく */
+    margin-left: 20px; /* テキストとの間隔を適切に調整 */
+    font-size: 12px;
 }
     
 nav ul li a {
     color: white;
     text-decoration: none;
-    padding: 4px 6px; /* メニューのパディングを縮小 */
-    font-size: 11px; /* 文字サイズを小さく */
+    padding: 4px 6px;
+    font-size: 12px;
 }
 
 nav ul li a.active, nav ul li a:hover {
@@ -134,11 +134,11 @@ img, iframe {
 .social-links {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* 2列 */
-    gap: 10px; /* ボタンの間隔 */
+    gap: 10px;
     justify-content: center;
     align-items: center;
-    max-width: 300px; /* 適切な幅に調整 */
-    margin: 30px auto; /* 中央寄せ */
+    max-width: 300px;
+    margin: 30px auto;
 }
 
 /* SNSボタン共通のスタイル */
@@ -151,8 +151,8 @@ img, iframe {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 140px; /* ボタンの幅 */
-    height: 50px; /* ボタンの高さ */
+    width: 140px;
+    height: 50px;
     text-align: center;
 }
 
@@ -172,7 +172,7 @@ img, iframe {
 
 /* フッター */
 footer {
-    background-color: #000; /* 背景を黒に変更 */
+    background-color: #000;
     color: white;
     text-align: center;
     padding: 10px;
@@ -186,7 +186,7 @@ footer {
 .social-icons a img {
     width: 30px;
     margin: 0 10px;
-    filter: invert(1); /* アイコンの色を白に変更 */
+    filter: invert(1);
 }
 
 /* スマホ時のナビゲーション */
@@ -205,7 +205,7 @@ footer {
     }
 
     nav ul li a {
-        padding: 3px 5px; /* スマホ時の間隔をさらに縮小 */
-        font-size: 10px; /* さらに小さく */
+        padding: 3px 5px;
+        font-size: 10px;
     }
 }
