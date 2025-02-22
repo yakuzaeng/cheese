@@ -45,7 +45,7 @@ header {
     line-height: 1; /* 行の高さを調整 */
 }
 
-/* ナビゲーションメニュー（フォントサイズを小さく & 間隔を縮める） */
+/* ナビゲーションメニュー（フォントサイズを小さく & 間隔を縮める & 棒線を追加） */
 nav {
     display: flex;
     align-items: center;
@@ -59,10 +59,21 @@ nav ul {
     padding: 0;
 }
 
+/* 各メニューの間に白い棒線を追加 */
 nav ul li {
-    display: inline;
+    display: flex;
+    align-items: center;
+    position: relative;
 }
 
+/* 各項目の後に棒線を追加（最後の項目には適用しない） */
+nav ul li:not(:last-child)::after {
+    content: "|";
+    color: white; /* 棒線の色 */
+    margin-left: 10px; /* テキストとの間隔 */
+    font-size: 14px; /* 棒線のサイズ */
+}
+    
 nav ul li a {
     color: white;
     text-decoration: none;
