@@ -161,12 +161,13 @@ img, iframe {
 
 /* フッター */
 footer {
-    background-color: #000;
+    background-color: #000; /* 背景を黒に変更 */
     color: white;
     text-align: center;
     padding: 10px;
 }
 
+/* ソーシャルアイコンのスタイル（白色に変更） */
 .social-icons {
     margin-top: 10px;
 }
@@ -174,6 +175,7 @@ footer {
 .social-icons a img {
     width: 30px;
     margin: 0 10px;
+    filter: invert(1); /* アイコンの色を白に変更 */
 }
 
 /* スマホ時のナビゲーション */
