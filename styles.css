@@ -11,8 +11,14 @@ body {
 .navbar {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 20px;
     background-color: #1A1A3D;
+}
+
+.menu-icon, .search-icon {
+    font-size: 24px;
+    cursor: pointer;
 }
 
 .logo {
@@ -20,25 +26,16 @@ body {
     font-weight: bold;
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
 .hero {
-    background-image: url('your-image-path.jpg');
+    background-image: url('hero.jpg');
     background-size: cover;
     background-position: center;
     height: 50vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 36px;
+    font-weight: bold;
 }
 
 .message {
@@ -46,13 +43,37 @@ nav ul li a {
     font-size: 18px;
 }
 
-.subscribe form {
+.seal img {
+    width: 50px;
+}
+
+.signature {
+    font-style: italic;
+    font-size: 20px;
     margin-top: 10px;
+}
+
+.news, .administration, .priorities {
+    padding: 20px;
+    text-align: center;
+}
+
+.news-item img, .admin-image img, .priorities-image img {
+    width: 90%;
+    max-width: 600px;
+}
+
+.subscribe {
+    background-color: #1A1A3D;
+    padding: 20px;
+    margin-top: 20px;
 }
 
 .subscribe input {
     padding: 10px;
     margin-right: 10px;
+    width: 300px;
+    max-width: 80%;
 }
 
 .subscribe button {
@@ -61,6 +82,15 @@ nav ul li a {
     color: white;
     border: none;
     cursor: pointer;
+}
+
+.about {
+    padding: 20px;
+}
+
+.about-images img {
+    width: 30%;
+    margin: 5px;
 }
 
 footer {
