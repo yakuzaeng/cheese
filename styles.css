@@ -1,215 +1,76 @@
-/* 全体のスタイル */
+/* styles.css */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #ffffff;
-    color: #000;
-}
-
-/* 修正追加: ページ全体のオーバーフロー防止 */
-html, body {
-    overflow-x: hidden;
-    width: 100%;
-}
-
-/* ヘッダーのスタイル */
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between; /* ロゴとメニューを左右均等に配置 */
-    background-color: #000;
-    padding: 8px 20px;
+    background-color: #0A0A23;
     color: white;
-    width: 100%;
-    box-sizing: border-box;
+    text-align: center;
 }
 
-/* ロゴ */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #1A1A3D;
+}
+
 .logo {
-    display: flex;
-    align-items: center;
-    gap: 6px; /* ロゴと「三豊會」の間隔を調整 */
-}
-
-.logo img {
-    height: 30px; /* アイコンのサイズを小さく */
-}
-
-/* 追加: 左上の「三豊會」の文字サイズを小さく */
-.logo h1 {
-    font-size: 12px;
-    margin: 0;
-    padding: 0;
-    line-height: 1;
-}
-
-/* ナビゲーションメニュー */
-nav {
-    display: flex;
-    align-items: center;
-    flex-grow: 1; /* ナビゲーションを適切に伸ばす */
-    justify-content: flex-start; /* 左揃え */
-    margin-left: 15px; /* 三豊會との間隔を調整 */
+    font-size: 24px;
+    font-weight: bold;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    gap: 10px; /* メニュー間の間隔を微調整 */
-    margin: 0;
-    padding: 0;
-    align-items: center;
+    gap: 15px;
 }
 
-/* 各メニューの間に白い棒線を追加 */
-nav ul li {
-    display: flex;
-    align-items: center;
-    position: relative;
-}
-
-/* 各項目の後に棒線を追加（最後の項目には適用しない） */
-nav ul li:not(:last-child)::after {
-    content: "|";
-    color: white;
-    margin-left: 8px; /* テキストとの間隔を狭める */
-    font-size: 12px;
-    font-weight: lighter;
-}
-    
 nav ul li a {
     color: white;
     text-decoration: none;
-    padding: 3px 5px;
-    font-size: 12px;
 }
 
-nav ul li a.active, nav ul li a:hover {
-    background-color: red;
-}
-
-/* メイン画像 */
-.hero img {
-    width: 100%;
-    display: block;
-}
-
-/* 修正追加: 画像や iframe のオーバーフロー防止 */
-img, iframe {
-    max-width: 100%;
-    height: auto;
-}
-
-/* 告知セクション */
-.announcement {
-    text-align: center;
-    padding: 30px;
-}
-
-.announcement h2 {
-    font-size: 22px;
-    margin-bottom: 10px;
-}
-
-.announcement p {
-    font-size: 16px;
-}
-
-.highlight {
-    font-weight: bold;
-    color: red;
-}
-
-.button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #00aaff;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.button:hover {
-    background-color: #0088cc;
-}
-
-/* 修正追加: SNS共有ボタンを2列×3行に並べる */
-.social-links {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
-    max-width: 300px;
-    margin: 30px auto;
-}
-
-/* SNSボタン共通のスタイル */
-.social-links a {
-    text-decoration: none;
-    padding: 12px;
-    border-radius: 5px;
-    color: white;
-    font-size: 14px;
+.hero {
+    background-image: url('your-image-path.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
     display: flex;
-    justify-content: center;
     align-items: center;
-    width: 120px;
-    height: 40px;
-    text-align: center;
+    justify-content: center;
 }
 
-/* SNSボタンの色 */
-.twitter { background-color: #1DA1F2; }
-.facebook { background-color: #1877F2; }
-.google { background-color: #DB4437; }
-.pocket { background-color: #EF4056; }
-.hatena { background-color: #00A4DE; }
-.line { background-color: #06C755; }
-
-/* 動画 */
-.video {
-    text-align: center;
-    margin: 30px 0;
+.message {
+    padding: 20px;
+    font-size: 18px;
 }
 
-/* フッター */
-footer {
-    background-color: #000;
-    color: white;
-    text-align: center;
-    padding: 10px;
-}
-
-/* ソーシャルアイコンのスタイル（白色に変更） */
-.social-icons {
+.subscribe form {
     margin-top: 10px;
 }
 
-.social-icons a img {
-    width: 25px;
-    margin: 0 8px;
-    filter: invert(1);
+.subscribe input {
+    padding: 10px;
+    margin-right: 10px;
 }
 
-/* スマホ時のナビゲーション */
-@media screen and (max-width: 768px) {
-    header {
-        flex-wrap: wrap;
-    }
-    
-    nav {
-        padding: 0 20px;
-    }
+.subscribe button {
+    padding: 10px;
+    background-color: #0057B7;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
 
-    nav ul {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
+footer {
+    background-color: #1A1A3D;
+    padding: 20px;
+    margin-top: 20px;
+}
 
-    nav ul li a {
-        padding: 2px 4px;
-        font-size: 10px;
-    }
+.socials a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
 }
