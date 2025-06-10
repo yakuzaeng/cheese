@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>お問い合わせ</title>
+  <link rel="stylesheet" href="reset.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="logo">私たちのグループ</div>
+      <span class="menu-toggle">&#9776;</span>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="philosophy.html">理念</a></li>
+          <li><a href="members.html">メンバー</a></li>
+          <li><a href="activities.html">活動内容</a></li>
+          <li><a href="blog.html">ブログ</a></li>
+          <li><a href="contact.html">お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+    <h1>お問い合わせ</h1>
+    <form action="https://formspree.io/f/xxxxx" method="POST">
+      <label for="name">お名前</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">メールアドレス</label>
+      <input type="email" id="email" name="email" required>
+      <label for="message">メッセージ</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+      <button type="submit">送信</button>
+    </form>
+  </main>
+  <footer class="site-footer">
+    <p>&copy; 2025 私たちのグループ</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
