@@ -48,6 +48,16 @@ body {
   color: #00bcd4;
 }
 
+.menu-toggle {
+  display: none;
+  font-size: 1.5em;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  top: 1.2em;
+  right: 1em;
+}
+
 .hero {
   background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://via.placeholder.com/1920x600') center/cover no-repeat;
   color: white;
@@ -82,37 +92,6 @@ body {
   margin-top: 3em;
 }
 
-.menu-toggle {
-  display: none;
-  font-size: 1.5em;
-  color: white;
-  cursor: pointer;
-  position: absolute;
-  top: 1.2em;
-  right: 1em;
-}
-
-@media (max-width: 768px) {
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    background-color: #1a1a2e;
-    position: absolute;
-    top: 64px;
-    right: 0;
-    width: 200px;
-    padding: 1em;
-  }
-
-  .nav-links.active {
-    display: flex;
-  }
-
-  .menu-toggle {
-    display: block;
-  }
-}
-
 form {
   display: flex;
   flex-direction: column;
@@ -143,4 +122,29 @@ form button:hover {
 
 .post {
   margin-bottom: 2em;
+  padding: 1em;
+  background-color: #ffffff;
+  border-radius: 6px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #1a1a2e;
+    position: absolute;
+    top: 64px;
+    right: 0;
+    width: 200px;
+    padding: 1em;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
 }
