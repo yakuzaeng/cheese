@@ -23,6 +23,11 @@ body {
   color: #ffffff;
 }
 
+.logo a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
 .nav-links {
   list-style: none;
   display: flex;
