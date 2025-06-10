@@ -1,104 +1,34 @@
-/* styles.css */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #0A0A23;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+header {
+    background-color: #222;
     color: white;
+    padding: 2em;
     text-align: center;
 }
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #1A1A3D;
+main {
+    padding: 2em;
+    max-width: 800px;
+    margin: auto;
 }
 
-.menu-icon, .search-icon {
-    font-size: 24px;
-    cursor: pointer;
-}
-
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.hero {
-    position: relative;
-    width: 100%;
-    height: 50vh;
-    background-image: url('https://i.imgur.com/GhALQGY.jpeg');
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.hero-text {
-    position: absolute;
-    color: white;
-    font-size: 48px;
-    font-weight: bold;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
-}
-
-.message {
-    padding: 20px;
-    font-size: 18px;
-}
-
-.news, .administration, .priorities {
-    padding: 20px;
-    text-align: center;
-}
-
-.news-item img, .admin-image img, .priorities-image img {
-    width: 90%;
-    max-width: 600px;
-}
-
-.subscribe {
-    background-color: #1A1A3D;
-    padding: 20px;
-    margin-top: 20px;
-}
-
-.subscribe input {
-    padding: 10px;
-    margin-right: 10px;
-    width: 300px;
-    max-width: 80%;
-}
-
-.subscribe button {
-    padding: 10px;
-    background-color: #0057B7;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-.about {
-    padding: 20px;
-}
-
-.about-images img {
-    width: 30%;
-    margin: 5px;
+section {
+    margin-bottom: 2em;
 }
 
 footer {
-    background-color: #1A1A3D;
-    padding: 20px;
-    margin-top: 20px;
-}
-
-.socials a {
+    background-color: #222;
     color: white;
-    margin: 0 10px;
-    text-decoration: none;
+    text-align: center;
+    padding: 1em;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
