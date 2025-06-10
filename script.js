@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
       {
         title: "やっていく事件簿",
         date: "2025-06-10",
-        summary: "ローソン 西宮愛宕山店の駐車場において物損事故"
+        summary: "ローソン 西宮愛宕山店の駐車場において物損事故発生。"
       },
       {
         title: "報告",
