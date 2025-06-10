@@ -11,14 +11,14 @@ document.addEventListener("DOMContentLoaded", function() {
   if (document.querySelector("#blog-posts")) {
     const posts = [
       {
-        title: "地域イベントに参加しました",
-        date: "2025-05-25",
-        summary: "地域の清掃活動に貢献しました。"
+        title: "やっていく事件簿",
+        date: "2025-06-10",
+        summary: "ローソン 西宮愛宕山店の駐車場において物損事故"
       },
       {
-        title: "新メンバー加入",
-        date: "2025-05-20",
-        summary: "新しい仲間が加わりました！"
+        title: "報告",
+        date: "2026-05-10",
+        summary: "佐藤隊員、自家用車の使用を一時的に停止。"
       }
     ];
 
