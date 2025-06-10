@@ -1,0 +1,141 @@
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  background-color: #f5f7fa;
+  margin: 0;
+  color: #333;
+}
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.site-header {
+  background-color: #1a1a2e;
+  padding: 1em 0;
+  position: relative;
+}
+
+.logo {
+  font-size: 1.6em;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5em;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #00bcd4;
+}
+
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://via.placeholder.com/1920x600') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero-text h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
+
+.hero-text p {
+  font-size: 1.2em;
+}
+
+.updates {
+  margin: 3em 0;
+}
+
+.updates h2 {
+  font-size: 1.5em;
+  color: #1a1a2e;
+  margin-bottom: 1em;
+}
+
+.site-footer {
+  background-color: #1a1a2e;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+  margin-top: 3em;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 1.5em;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  top: 1.2em;
+  right: 1em;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #1a1a2e;
+    position: absolute;
+    top: 64px;
+    right: 0;
+    width: 200px;
+    padding: 1em;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  max-width: 500px;
+}
+
+form input, form textarea {
+  padding: 0.8em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: inherit;
+}
+
+form button {
+  background-color: #1a1a2e;
+  color: white;
+  border: none;
+  padding: 0.8em;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+form button:hover {
+  background-color: #00bcd4;
+}
+
+.post {
+  margin-bottom: 2em;
+}
