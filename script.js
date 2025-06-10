@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
       },
       {
         title: "報告",
-        date: "2026-05-10",
+        date: "2025-05-10",
         summary: "佐藤隊員、自家用車の使用を一時的に停止。"
       }
     ];
