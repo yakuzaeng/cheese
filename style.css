@@ -9,6 +9,9 @@ body {
   max-width: 1080px;
   margin: 0 auto;
   padding: 0 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .site-header {
@@ -17,15 +20,10 @@ body {
   position: relative;
 }
 
-.logo {
-  font-size: 1.6em;
-  font-weight: bold;
-  color: #ffffff;
-}
-
-.logo a {
-  color: #ffffff;
-  text-decoration: none;
+.logo img {
+  height: 60px;
+  width: auto;
+  display: block;
 }
 
 .nav-links {
